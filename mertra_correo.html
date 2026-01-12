@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Email Replica</title>
+<style>
+  body{
+    margin:0;
+    background:#0c0c0d;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+  }
+
+  .phone{
+    width:420px;
+    max-width:95vw;
+    background:#0f0f10;
+    border-radius:22px;
+    padding:18px;
+    box-shadow:0 0 30px rgba(0,0,0,0.6);
+  }
+
+  /* TOP NAV BAR */
+  .topnav{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:12px;
+  }
+  .nav-btn{
+    width:30px;height:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0.85;
+  }
+  .nav-title{
+    font-size:20px;
+    font-weight:600;
+  }
+  .spacer{flex:1}
+
+  /* small icons style */
+  .top-icons{
+    display:flex;
+    gap:20px;
+    margin-top:10px;
+  }
+  .small-icon{
+    width:24px;
+    height:24px;
+    opacity:0.75;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .mail-badge{
+    background:#1a1a1b;
+    font-size:12px;
+    padding:5px 8px;
+    border-radius:10px;
+    color:#9aa0a6;
+    width:fit-content;
+    margin-top:6px;
+  }
+
+  /* CARD */
+  .card{
+    margin-top:18px;
+    background:#131315;
+    padding:18px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,0.05);
+    display:flex;
+    gap:12px;
+  }
+
+  .product-title{font-weight:600;font-size:15px;margin-bottom:6px;}
+  .product-sub{color:#a2a3a4;font-size:13px;margin-bottom:12px;}
+
+  .shipped{
+    font-size:40px;
+    font-weight:700;
+    margin:12px 0;
+  }
+
+  .meta{
+    display:flex;
+    gap:18px;
+    margin-bottom:12px;
+  }
+  .meta div{font-size:13px;color:#b0b0b1;}
+  .meta strong{color:white;font-weight:600;display:block;margin-top:5px;}
+
+  .actions{
+    display:flex;
+    gap:12px;
+  }
+
+  .btn{
+    flex:1;
+    padding:12px;
+    border-radius:16px;
+    font-weight:600;
+    text-align:center;
+    color:white;
+    cursor:pointer;
+  }
+  .btn.light{
+    background:#4cb6ff;
+    color:#062b45;
+  }
+  .btn.dark{
+    background:#0c4c86;
+  }
+
+  .thumb{
+    width:60px;height:60px;
+    border-radius:10px;
+    background:#0b1a33;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .preview{
+    margin-top:18px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+  }
+  .avatar{
+    width:40px;height:40px;border-radius:50%;
+    background:#1d1e20;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  .correct{
+    margin-left:auto;
+    font-size:14px;
+    color:#818283;
+  }
+
+  .mid{
+    margin-top:26px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .butter{
+    width:120px;
+    opacity:0.25;
+  }
+  .order-id{
+    color:#7c7d7e;
+    font-size:14px;
+  }
+  .order-id strong{color:#b6b6b6;}
+
+  .footer{
+    margin-top:26px;
+    display:flex;
+    gap:10px;
+  }
+  .foot-btn{
+    flex:1;
+    background:transparent;
+    border:1px solid #2a2a2b;
+    padding:12px;
+    text-align:center;
+    border-radius:30px;
+    color:#c2c3c3;
+    font-weight:600;
+    cursor:pointer;
+  }
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <div class="topnav">
+    <div class="nav-btn">⬅</div>
+    <div class="nav-title">Order #318534002 confirmed</div>
+    <div class="spacer"></div>
+    ⭐
+  </div>
+
+  <div class="top-icons">
+    <div class="small-icon">⬇</div>
+    <div class="small-icon">🗑</div>
+    <div class="small-icon">✉</div>
+    <div class="small-icon">⋯</div>
+  </div>
+
+  <div class="mail-badge">Boîte de réception</div>
+
+  <div class="card">
+    <div style="flex:1">
+      <div class="product-title">MERTRA x Umbro Technical Bottoms (Blue)</div>
+      <div class="product-sub">1 article de MERTRA</div>
+
+      <div class="shipped">Expédié</div>
+
+      <div class="meta">
+        <div>
+          Numéro de commande
+          <strong>318534002</strong>
+        </div>
+        <div>
+          Numéro de suivi
+          <strong>LY865915101DE</strong>
+        </div>
+      </div>
+
+      <div class="actions">
+        <div class="btn light">Suivre le colis</div>
+        <div class="btn dark">Afficher la commande</div>
+      </div>
+    </div>
+
+    <div class="thumb">
+      👖
+    </div>
+  </div>
+
+  <div class="preview">
+    <div class="avatar">👤</div>
+    <div>
+      <div style="font-weight:600">MERTRA <span style="color:#7f8082;font-size:13px;margin-left:6px;">31 oct.</span></div>
+      <div style="color:#9a9b9d;font-size:13px;">à moi</div>
+    </div>
+    <div class="correct">Correct ? 👍 👎</div>
+  </div>
+
+  <div class="mid">
+    <img class="butter" src="" alt="butterfly (placeholder)">
+    <div class="order-id">ORDER <strong>#318534002</strong></div>
+  </div>
+
+  <div class="footer">
+    <div class="foot-btn">↩ Répondre</div>
+    <div class="foot-btn">↪ Transférer</div>
+    <div style="width:40px;"></div>
+  </div>
+
+</div>
+</body>
+</html>

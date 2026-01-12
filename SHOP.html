@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MERTRA Order – Pixel Perfect</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+}
+
+body{
+  margin:0;
+  background:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:#000;
+}
+
+/* ICONS */
+.icon{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+}
+
+/* STATUS BAR */
+.status{
+  height:44px;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:600;
+  font-size:15px;
+}
+
+.status-icons{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:13px;
+}
+
+/* WRAPPER */
+.wrapper{
+  padding:16px 16px 96px;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:#f1f1f1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo img{
+  width:26px;
+  height:26px;
+  object-fit:contain;
+}
+
+.h-text{
+  flex:1;
+}
+
+.h-text h1{
+  margin:0;
+  font-size:17px;
+  font-weight:700;
+}
+
+.h-text p{
+  margin:2px 0 0;
+  font-size:13px;
+  color:#6b6b6b;
+}
+
+/* CARD */
+.card{
+  margin-top:16px;
+  background:#f6f6f6;
+  border-radius:18px;
+  padding:16px;
+}
+
+.card h2{
+  margin:0 0 14px;
+  font-size:17px;
+}
+
+.product{
+  display:flex;
+  gap:12px;
+}
+
+.product + .product{
+  margin-top:12px;
+}
+
+.p-img{
+  width:64px;
+  height:64px;
+  border-radius:10px;
+  background-size:cover;
+  background-position:center;
+}
+
+.p-info p{
+  margin:0;
+  font-size:14px;
+  font-weight:600;
+}
+
+.p-info span{
+  display:block;
+  margin-top:4px;
+  font-size:13px;
+  color:#6b6b6b;
+}
+
+/* ROWS */
+.row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 0;
+  border-bottom:1px solid #e6e6e6;
+}
+
+.row:last-of-type{
+  border-bottom:none;
+}
+
+.row-text{
+  flex:1;
+  font-size:15px;
+}
+
+/* BUTTON */
+.btn{
+  margin:20px 0 8px;
+  background:#f2f2f2;
+  border-radius:12px;
+  padding:14px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* SUGGESTIONS */
+.sug h3{
+  margin:22px 0 12px;
+  font-size:18px;
+}
+
+.sug-row{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+}
+
+.sug-item{
+  min-width:160px;
+  height:200px;
+  border-radius:16px;
+  background:#eee;
+}
+
+/* TAB BAR */
+.tabbar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:64px;
+  border-top:1px solid #e6e6e6;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.tabbar img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+}
+</style>
+</head>
+
+<body>
+
+<!-- STATUS BAR -->
+<div class="status">
+  <span>09:05</span>
+  <div class="status-icons">
+    <img src="icons/signal.svg" class="icon">
+    <img src="icons/wifi.svg" class="icon">
+    <img src="icons/battery.svg" class="icon">
+    <span>94%</span>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">
+      <img src="https://martra.store/wp-content/uploads/2025/09/mertra-mertra-logo.png" alt="MERTRA">
+    </div>
+
+    <div class="h-text">
+      <h1>MERTRA</h1>
+      <p>2 articulos · Pedido el 31 de octubre.</p>
+    </div>
+
+    <div style="font-size:22px">⋯</div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <h2>Standard International</h2>
+
+    <div class="product">
+      <div class="p-img" style="background-image:url('umbroPH.WEBP')"></div>
+      <div class="p-info">
+        <p>MERTRA x Umbro Warm Up Hoodie</p>
+        <span>109,95 € · S</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="p-img" style="background-image:url('umbroPP.WEBP')"></div>
+      <div class="p-info">
+        <p>MERTRA x Umbro Warm Up Joggers</p>
+        <span>109,95 € · S</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROWS -->
+  <div class="row">
+    <img src="recibo.PNG" class="icon">
+    <div class="row-text">Recibo del pedido</div>
+    <div>›</div>
+  </div>
+
+  <div class="row">
+    <img src="carta.PNG" class="icon">
+    <div class="row-text">Contactar MERTRA</div>
+    <div>›</div>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="btn">Visitar la tienda</div>
+
+  <!-- SUGGESTIONS -->
+  <div class="sug">
+    <h3>Tambien te podria interesar</h3>
+    <div class="sug-row">
+      <div class="sug-item"></div>
+      <div class="sug-item"></div>
+      <div class="sug-item"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- TAB BAR -->
+<div class="tabbar">
+  <img src="home.PNG">
+  <img src="lupa.PNG">
+  <img src="recibo.PNG">
+</div>
+
+</body>
+</html>
