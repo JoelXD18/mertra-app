@@ -27,20 +27,7 @@ body{
 
 /* STATUS BAR */
 .status{
-  height:44px;
-  padding:0 16px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  font-weight:600;
-  font-size:15px;
-}
-
-.status-icons{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:13px;
+  display:none;
 }
 
 /* WRAPPER */
@@ -219,9 +206,19 @@ body{
   padding-bottom:20px;
 }
 
-.tabbar img{
-  width:28px;
-  height:28px;
+.tab-item{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#f5f5f5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.tab-item img{
+  width:24px;
+  height:24px;
   object-fit:contain;
 }
 </style>
@@ -307,9 +304,15 @@ body{
 
 <!-- TAB BAR -->
 <div class="tabbar">
-  <img src="home.PNG">
-  <img src="lupa.PNG">
-  <img src="recibo.PNG">
+  <div class="tab-item">
+    <img src="home.PNG">
+  </div>
+  <div class="tab-item">
+    <img src="lupa.PNG">
+  </div>
+  <div class="tab-item">
+    <img src="recibo.PNG">
+  </div>
 </div>
 
 </body>
